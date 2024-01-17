@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="1em"
+   viewBox="0 0 640 512"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="facicon.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="320"
+     inkscape:cy="256"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+  <path
+     d="M 160,64 C 160,28.7 188.7,0 224,0 h 352 c 35.3,0 64,28.7 64,64 v 288 c 0,35.3 -28.7,64 -64,64 H 336.8 C 325,390.5 306.9,368.5 284.4,352 H 384 v -32 c 0,-17.7 14.3,-32 32,-32 h 64 c 17.7,0 32,14.3 32,32 v 32 h 64 V 64 H 224 v 49.1 C 205.2,102.2 183.3,96 160,96 Z"
+     id="path824" />
+  <path
+     d="m 160,128 a 96,96 0 1 1 0,192 96,96 0 1 1 0,-192 z"
+     id="path822" />
+  <path
+     d="m 133.3,352 h 53.3 C 260.3,352 320,411.7 320,485.3 320,500 308.1,512 293.3,512 H 26.7 C 11.9,512 0,500.1 0,485.3 0,411.7 59.7,352 133.3,352 Z"
+     id="path2" />
+</svg>
