@@ -1,0 +1,60 @@
+#main>.specifier>.content {
+	padding: 2.5px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#main>.specifier>.content>.checkBox {
+	position: relative;
+	min-height: 3em;
+	text-align: center;
+	border: 2px solid #227093;
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: #227093;
+	transition-property: border-color, color, background-color;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+}
+#main>.specifier>.content>.checkBox:hover {
+	border-color: #474787;
+	color: #474787;
+	cursor: pointer;
+}
+#main>.specifier>.content>.checkBox.checked {
+	border-color: #474787;
+	background-color: #474787;
+	color: #f7f1e3;
+	cursor: pointer;
+}
+#main>.specifier>.content>.checkBox>span {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#main>.specifier>.content>.input {
+	flex-basis: 0;
+	flex-grow: 1;
+	margin: 2.5px;
+	display: block;
+	min-width: 40%;
+}
+#main>.specifier>.content>.input>input {
+	border: 2px solid #227093;
+	border-radius: 5px;
+	padding: 2.5px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 3em;
+	line-height: 3em;
+	background-color: rgba(255, 255, 255, 0.5);
+	transition-property: border-color;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+}
+#main>.specifier>.content>.input>input:focus {
+	outline: unset;
+	border-color: #474787;
+}

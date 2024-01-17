@@ -1,0 +1,228 @@
+#main>.environment {
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	white-space: nowrap;
+	font-size: 0;
+}
+#main>.environment>.phrase {
+	display: inline-block;
+	width: 100%;
+	font-size: 10pt;
+	opacity: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	transition-property: width, opacity;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+}
+#main>.environment>.phrase.hidden {
+	width: 0;
+	opacity: 0;
+}
+#main>.environment>.phrase>.part {
+	position: relative;
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+#main>.environment>.phrase>.part>.title {
+	width: calc(100% - 10px);
+	line-height: 1em;
+}
+#main>.environment>.phrase>.part>.content {
+	width: 100%;
+	height: 4em;
+	padding: 5px 2.5px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#main>.environment>.phrase>.part>.content>* {
+	margin: 0 2.5px;
+}
+#main>.environment>.phrase>.part>.content>textarea {
+	width: 100%;
+	height: 100%;
+	border: 2px solid #227093;
+	border-radius: 5px;
+	padding: 2.5px;
+	box-sizing: border-box;
+	font-family: inherit;
+	font-size: 8pt;
+	resize: none;
+	background-color: rgba(255, 255, 255, 0.5);
+	transition-property: border-color;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+}
+#main>.environment>.phrase>.part>.content>textarea:focus {
+	outline: unset;
+	border-color: #474787;
+}
+#main>.environment>.phrase>.part>.content>.answer {
+	width: 100%;
+	height: 100%;
+	border: 2px solid #cc8e35;
+	border-radius: 5px;
+	padding: 2.5px;
+	box-sizing: border-box;
+	font-size: 8pt;
+	opacity: 100%;
+	white-space: break-spaces;
+	overflow: auto;
+	transition-property: width, margin, border, opacity;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+}
+#main>.environment>.phrase>.part>.content>.answer.hidden {
+	width: 0;
+	margin: 0;
+	border-width: 0;
+	opacity: 0;
+}
+#main>.environment>.phrase>.part>.content>.boolBox {
+	flex-grow: 0;
+	flex-shrink: 0;
+	width: 5em;
+	height: 100%;
+	overflow: hidden;
+	transition-property: width, margin, border;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+}
+#main>.environment>.phrase>.part>.content>.boolBox.hidden {
+	width: 0;
+	margin: 0;
+	border-width: 0;
+}
+#main>.environment>.phrase>.part>.content>.boolBox.disabled {
+	pointer-events: none;
+}
+#main>.environment>.phrase>.part>.content>.boolBox>div {
+	display: block;
+	position: relative;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	height: calc(50% - 6.25px);
+	transition-property: border-color, color, background-color;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+}
+#main>.environment>.phrase>.part>.content>.boolBox>div:first-of-type {
+	margin-bottom: 5px;
+	border-color: #227093;
+	background-color: transparent;
+	color: #227093;
+}
+#main>.environment>.phrase>.part>.content>.boolBox>div:last-of-type {
+	border-color: #b33939;
+	background-color: #b33939;
+	color: #f7f1e3;
+}
+#main>.environment>.phrase>.part>.content>.boolBox.true>div:first-of-type {
+	border-color: #218c74;
+	background-color: #218c74;
+	color: #f7f1e3;
+}
+#main>.environment>.phrase>.part>.content>.boolBox.true>div:last-of-type {
+	border-color: #227093;
+	background-color: transparent;
+	color: #227093;
+}
+#main>.environment>.phrase>.part>.content>.boolBox>div:hover {
+	cursor: pointer;
+}
+#main>.environment>.phrase>.part>.content>.boolBox:not(.true)>div:first-of-type:hover,
+#main>.environment>.phrase>.part>.content>.boolBox.true>div:last-of-type:hover  {
+	border-color: #474787;
+	color: #474787;
+}
+#main>.environment>.phrase>.part>.content>.boolBox>div>span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+#main>.environment>.phrase>.pronunciation>.content {
+	height: 3em;
+}
+#main>.environment>.phrase>.pronunciation>.content>.reader {
+	width: 100%;
+	line-height: 1em;
+	text-align: center;
+	color: #227093;
+	fill: #227093;
+	white-space: normal;
+	transition-property: color, fill;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+}
+#main>.environment>.phrase>.pronunciation>.content>.reader:hover {
+	color: #474787;
+	fill: #474787;
+	cursor: pointer;
+}
+#main>.environment>.phrase>.pronunciation>.content>.reader>span {
+	filter: blur(0);
+	transition-property: filter;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+}
+#main>.environment>.phrase>.pronunciation>.content>.reader>span.hidden {
+	filter: blur(4px);
+	user-select: none;
+}
+#main>.environment>.phrase>.pronunciation>.content>.reader>svg {
+	display: inline-block;
+	height: 1em;
+	vertical-align: middle;
+}
+
+#main>.environment>.phrase>.delimiter {
+	display: block;
+	margin: 0 5px;
+	border-bottom: 1px solid #d1ccc0;
+	width: calc(100% - 10px);
+}
+
+#main>.selectorBox {
+	flex-grow: 0;
+}
+#main>.selectorBox>.delimiter:last-of-type {
+	height: 0;
+}
+#main>.selectorBox>.content {
+	margin-top: 0;
+	padding: 2.5px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#main>.selectorBox>.content>.selector {
+	display: block;
+	margin: 2.5px;
+	padding: 2.5px;
+	border: 2px solid #227093;
+	border-radius: 5px;
+	width: 1em;
+	height: 1em;
+	line-height: 1em;
+	color: #227093;
+	text-align: center;
+	transition-property: border-color, background-color, color;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+}
+#main>.selectorBox>.content>.selector:hover {
+	border-color: #474787;
+	color: #474787;
+	cursor: pointer;
+}
+#main>.selectorBox>.content>.selector.selected {
+	border-color: #474787;
+	color: #f7f1e3;
+	background-color: #474787;
+}
