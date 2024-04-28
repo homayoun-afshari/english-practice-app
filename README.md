@@ -1,6 +1,6 @@
 # English Practice Application
 <p align="center">
-	<img src="screenshots/01.PNG" weight="20%">&#9;<img src="screenshots/02.PNG" weight="20%">&#9;<img src="screenshots/03.PNG" weight="20%">&#9;<img src="screenshots/04.PNG" weight="20%">
+	<img src="screenshots/01.PNG" width="20%">&#9;<img src="screenshots/02.PNG" width="20%">&#9;<img src="screenshots/03.PNG" width="20%">&#9;<img src="screenshots/04.PNG" width="20%">
 </p>
 
 This repository contains all the necessary codes for implementing a web application that helps in practicing English. The web application provides tools for creating tests in spelling, meaning, synonyms, category, and grammatical function of different words. The UI is designed to be self-explanatory. You can find a demo [here](http://demo-engpractice.atwebpages.com/).
